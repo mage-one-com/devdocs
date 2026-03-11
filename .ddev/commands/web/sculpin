@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run Sculpin commands (e.g. "ddev sculpin generate --watch")
+## Usage: sculpin [flags] [args]
+## Example: "ddev sculpin generate --watch"
+
+./vendor/bin/sculpin "$@"
