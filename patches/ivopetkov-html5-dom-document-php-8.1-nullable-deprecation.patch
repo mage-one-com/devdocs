@@ -1,0 +1,18 @@
+--- a/src/HTML5DOMDocument.php
++++ b/src/HTML5DOMDocument.php
+@@ -43,7 +43,7 @@
+      * @param string $version The version number of the document as part of the XML declaration.
+      * @param string $encoding The encoding of the document as part of the XML declaration.
+      */
+-    public function __construct(string $version = null, string $encoding = null)
++    public function __construct(string $version = '1.0', string $encoding = '')
+     {
+         parent::__construct($version, $encoding);
+         $this->registerNodeClass('DOMElement', '\IvoPetkov\HTML5DOMElement');
+@@ -392,6 +392,7 @@
+      * @param string $filename The path to the saved HTML document.
+      * @return int the number of bytes written or FALSE if an error occurred.
+      */
++    #[\ReturnTypeWillChange]
+     public function saveHTMLFile($filename)
+     {

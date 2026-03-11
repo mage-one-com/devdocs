@@ -114,23 +114,11 @@
                 </li>
             </ul>
             <ul class="navi--tree">
-                <li class="navi--chapter">
-                    <a href="https://docs.shopware.com/en/shopware-platform-dev-en" class="navi--link">
-                        <span>
-                            Shopware 6
-                        </span>
-                        <span>
-                            <i class="icon-external-link"></i>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="navi--tree">
                 <li class="navi--chapter navi--backlink-mobile">
-                    <a href="https://en.shopware.com" class="navi--link"><i class="icon--arrow-left"></i> Back to shopware.com</a>
+                    <a href="https://safefive.de" target="_blank" class="navi--link"><i class="icon--arrow-left"></i> Back to safefive.de</a>
                 </li>
                 <li class="navi--backlink">
-                    <a href="https://en.shopware.com"><i class="icon--arrow-left"></i>Back to shopware.com</a>
+                    <a href="https://safefive.de" target="_blank"><i class="icon--arrow-left"></i>Back to safefive.de</a>
                 </li>
             </ul>
         </div>
@@ -208,110 +196,6 @@
     </div><!---- END Blog ----->
 
 
-    <div class="start page-wrap">
-
-        <!-- START Contribute & Resources Icons -->
-        <div class="icon-banner">
-            <div class="wrapper">
-
-            <h3>Contribute & Resources</h3>
-
-            <div class="row"><!-- start row --->
-                <div class="col">
-                   <a href="https://issues.shopware.com" target="_blank" alt="Bug Icon" title="Issue Tracker">
-                    <div class="icon issuetracker"></div>
-                    <h5>Issue Tracker</h5>
-                   </a>
-                </div>
-
-                <div class="col">
-                    <a href="https://github.com/shopwareLabs" target="_blank" alt="Labs Icon" title="Shopware Labs on github">
-                        <div class="icon labs"></div>
-                        <h5>Labs</h5>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="{{ site.url }}/styletile/" target="_blank" alt="Non-style Icon" title="Theme style tile">
-                        <div class="icon styleguide"></div>
-                        <h5>Style tile</h5>
-                    </a>
-                </div>
-            </div><!-- ende row --->
-
-            <div class="row"><!-- start row --->
-                <div class="col">
-                    <a href="https://github.com/shopware5/shopware" target="_blank" alt="Github Icon" title="Shopware on github">
-                        <div class="icon github"></div>
-                        <h5>GitHub</h5>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="https://twitter.com/shopware" target="_blank" alt="Twitter Icon" title="Shopware on twitter">
-                        <div class="icon twitter"></div>
-                        <h5>Twitter</h5>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="http://forum.shopware.com/?_ga=2.38302695.533270487.1511170509-1625522452.1501580272" target="_blank" alt="Forum Icon" title="shopware community forum">
-                        <div class="icon forum"></div>
-                        <h5>Forum</h5>
-                    </a>
-                </div>
-            </div><!-- ende row --->
-
-        </div>
-    </div><!-- END Contribute & Resources Icons -->
-
-
-    <!--UDEMY TEASER-->
-    <div class="udemy-teaser">
-        <div class="wrapper">
-
-            <div class="bubbles">
-                <div class="bubble-img">
-
-                    <div class="big-one"></div>
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                    <div class="four"></div>
-                    <div class="bubble-name">
-                        <h6>Niklas Dzösch</h6>
-                        <p>Shopware Evangelist and Core Developer</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col">
-                <h3>Develop your own unique theme</h3>
-                <p>Here Shopware Evangelist and Core Developer, Niklas Dzösch, takes you step-by-step through the process of developing your own unique Shopware theme. From installation to uploading your own theme in our store, this video series provides you with first-hand experience so that you can easily start creating your own Shopware themes today.</p>
-            </div>
-
-            <div class="button">
-                <a href="https://www.udemy.com/shopware-template-training-basic/" target="_blank" title="Enrol now for free">Enrol now for free</a>
-            </div>
-        </div>
-    </div><!-- close udemy --->
-
-
-    <div class="latest-changes">
-        <h3>Latest changes</h3>
-        <div class="wrapper">
-
-            <a href="#expandcode" class="expand" id="expandcode">show more</a>
-            <a href="#collapsecode" class="collapse" id="collapsecode">show less</a>
-
-            <div class="content-list">
-                {% include 'latest_changes.twig' %}
-            </div>
-        </div>
-    </div>
-
-    </div><!-----  END Start Page Wrap------->
 
 
     {% endblock %}
@@ -323,11 +207,9 @@
 
     <footer class="main-footer">
         <div class="footer--container">
-            <div class="copyright">{{ "now"|date("Y") }} © shopware AG - All rights reserved</div>
+            <div class="copyright">provided by safefive - {{ "now"|date("Y") }} © shopware AG - All rights reserved</div>
             <div class="footer--links">
-                <a href="https://en.shopware.com/legal-notice" target="_blank" title="Imprint">Imprint</a> |
-                <a href="https://en.shopware.com/gtc" target="_blank" title="Terms and Conditions">Terms and Conditions</a> |
-                <a id="show-consent" href="#" title="Cookie settings">Cookie settings</a>
+                <a href="https://safefive.de/impressum/" target="_blank" title="Imprint">Imprint</a>
             </div>
         </div>
     </footer>

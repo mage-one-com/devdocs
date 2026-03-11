@@ -2,6 +2,7 @@
     "require": {
         "bcremer/sculpin-commonmark-bundle": "^0.5.0",
         "bcremer/sculpin-less-bundle": "0.3.0",
+        "cweagans/composer-patches": "^1.7",
         "dflydev/embedded-composer": "^1.0@dev",
         "ivopetkov/html5-dom-document-php": "^1.1.0",
         "janbuecker/sculpin-meta-navigation-bundle": "^0.9",
@@ -22,7 +23,15 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
+            "cweagans/composer-patches": true,
             "sculpin/sculpin-theme-composer-plugin": true
+        }
+    },
+    "extra": {
+        "patches": {
+            "ivopetkov/html5-dom-document-php": {
+                "Fix PHP 8.1 implicit nullable type deprecation in DOMDocument constructor": "patches/ivopetkov-html5-dom-document-php-8.1-nullable-deprecation.patch"
+            }
         }
     }
 }
